@@ -11,10 +11,45 @@ nav button { margin-right: 10px; }
   margin: 12px 0 16px;
 }
 .grid-10 .char {
-  font-size: 28px;
+  font-size: 22px;
   text-align: center;
-  padding: 12px 8px;
+  padding: 6px;
+  width: 36px;
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 #encode-btn { margin: 8px 0 12px; }
+
+.noise-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 14px;
+}
+
+#noise {
+  width: 220px;
+}
+
+#encode-output,
+#encode-output-noisy {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.noise-area {
+  margin: 14px 0 10px;
+}
+
+#noise {
+  width: 100%;
+}
+
+.noise-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}

@@ -32,7 +32,22 @@
 
   <button id="encode-btn">Encode</button>
 
-  <h3>Encoded numbers</h3>
+<div class="noise-area">
+  <input id="noise" type="range" min="0" max="3.5" step="0.1" value="0">
+  <div class="noise-labels">
+    <span>Very Low noise</span>
+    <span>Low Noise</span>
+    <span>High Noise</span>
+    <span>Very High Noise</span>
+  </div>
+</div>
+
+
+<h3>Noisy Values</h3>
+<pre id="encode-output-noisy"></pre>
+
+
+  <h3>Zero Noise Values</h3>
   <pre id="encode-output"></pre>
 </div>
 
@@ -42,8 +57,6 @@
     <button id="decode-btn">Decode</button>
     <pre id="decode-output"></pre>
   </div>
-
-  <script src="baudot.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
