@@ -79,6 +79,7 @@ header {
   padding: 0;
 }
 
+/* Base Tab (inactive) */
 .tab {
   padding: 10px 18px;
   background: var(--panel-bg);
@@ -95,17 +96,20 @@ header {
   margin-bottom: -2px;
 }
 
+/* Hover feedback */
 .tab:hover {
   transform: translateY(-2px);
   background: #111;
   opacity: 1;
 }
 
+/* Active Tab */
 .tab.active {
   opacity: 1;
   background: #0f0f0f;
 }
 
+/* Panel (continuous glowing border behind tabs) */
 #panel {
   background: var(--panel-bg);
   border: 2px solid var(--accent);
@@ -167,7 +171,8 @@ textarea {
 
 button {
   padding: 10px 18px;
-  border: 1px solid var(--panel-border);
+  border: 2px solid var(--panel-border);
+  border-color:#006b3a;
   border-radius: 6px;
   background: var(--button-bg);
   color: var(--text);
@@ -299,6 +304,12 @@ select {
     flex-direction: column;
     align-items: stretch;
   }
+
+.char::placeholder {
+  color: #006b3a;   /* slightly dimmer than main green */
+  opacity: 1;       /* we want it visible, not faint */
+  text-align: center;
+}
 
   button,
   select {
